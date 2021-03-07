@@ -17,3 +17,8 @@ INSERT INTO tb_course(name, img_Uri, img_Gray_Uri) VALUES ('Curso HMTL','https:/
 
 INSERT INTO tb_offer(edition,start_Moment,end_Moment, course_id) VALUES ('1.0', TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z', TIMESTAMP WITH TIME ZONE '2020-08-14T10:00:00Z', 1 );
 INSERT INTO tb_offer(edition,start_Moment,end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2021-07-14T10:00:00Z', TIMESTAMP WITH TIME ZONE '2021-08-14T10:00:00Z', 1 );
+
+
+INSERT INTO tb_resource(title,description, position, img_uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha Principal', 1 ,'https://cdn.pixabay.com/photo/2018/04/18/09/57/icon-3329995__340.jpg',1,1);
+INSERT INTO tb_resource(title,description, position, img_uri, type, offer_id) VALUES ('Fórum', 'Tire suas duvidas', 2 ,'https://cdn.pixabay.com/photo/2018/04/18/09/57/icon-3329995__340.jpg',2,1);
+INSERT INTO tb_resource(title,description, position, img_uri, type, offer_id) VALUES ('Lives', 'Lives Exclusivas', 3 ,'https://cdn.pixabay.com/photo/2018/04/18/09/57/icon-3329995__340.jpg',0,1);
