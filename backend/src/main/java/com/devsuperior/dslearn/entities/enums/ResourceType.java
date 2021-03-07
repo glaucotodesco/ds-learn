@@ -1,4 +1,4 @@
-package com.devsuperior.dslearn.entities;
+package com.devsuperior.dslearn.entities.enums;
 
 public enum ResourceType {
     LESSON_ONLY, 

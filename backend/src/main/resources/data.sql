@@ -22,3 +22,11 @@ INSERT INTO tb_offer(edition,start_Moment,end_Moment, course_id) VALUES ('2.0', 
 INSERT INTO tb_resource(title,description, position, img_uri, type, offer_id) VALUES ('Trilha HTML', 'Trilha Principal', 1 ,'https://cdn.pixabay.com/photo/2018/04/18/09/57/icon-3329995__340.jpg',1,1);
 INSERT INTO tb_resource(title,description, position, img_uri, type, offer_id) VALUES ('Fórum', 'Tire suas duvidas', 2 ,'https://cdn.pixabay.com/photo/2018/04/18/09/57/icon-3329995__340.jpg',2,1);
 INSERT INTO tb_resource(title,description, position, img_uri, type, offer_id) VALUES ('Lives', 'Lives Exclusivas', 3 ,'https://cdn.pixabay.com/photo/2018/04/18/09/57/icon-3329995__340.jpg',0,1);
+
+
+INSERT INTO tb_section(title,description, position, img_uri,resource_id, prerequisite_id) values ('Capítulo 1', 'Descrição do Capítulo', 1,'https://cdn.pixabay.com/photo/2018/04/18/09/57/icon-3329995__340.jpg',1, null);
+INSERT INTO tb_section(title,description, position, img_uri,resource_id, prerequisite_id) values ('Capítulo 2', 'Descrição do Capítulo2', 2,'https://cdn.pixabay.com/photo/2018/04/18/09/57/icon-3329995__340.jpg',1, 1);
+INSERT INTO tb_section(title,description, position, img_uri,resource_id, prerequisite_id) values ('Capítulo 3', 'Descrição do Capítulo2', 3,'https://cdn.pixabay.com/photo/2018/04/18/09/57/icon-3329995__340.jpg',1, 2);
+
+
+
