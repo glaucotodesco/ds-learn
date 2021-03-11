@@ -1,13 +1,12 @@
-package com.devsuperior.dslearn;
+package com.devsuperior.dslearnbds;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DslearnApplication {
+public class DslearnbdsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DslearnApplication.class, args);
+		SpringApplication.run(DslearnbdsApplication.class, args);
 	}
-
 }
