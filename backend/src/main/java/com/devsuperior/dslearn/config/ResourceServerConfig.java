@@ -29,7 +29,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     private Environment env;
 
     private static final String[] PUBLIC = { "/oauth/token", "/h2-console/**" };
-    private static final String[] ADMIN = { "/users/**" };
+    
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
@@ -40,8 +40,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
         //@formatter:off
         http.authorizeRequests()
-            .antMatchers(PUBLIC).permitAll()
-            .antMatchers(ADMIN).hasRole("ADMIN");
+            .antMatchers(PUBLIC).permitAll();
         //@formatter:on
 
         //Add Cors

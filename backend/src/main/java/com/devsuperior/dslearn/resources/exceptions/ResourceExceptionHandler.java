@@ -5,6 +5,8 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.devsuperior.dslearn.services.exceptions.DatabaseException;
 import com.devsuperior.dslearn.services.exceptions.EntityNotFoundException;
+import com.devsuperior.dslearn.services.exceptions.ForbiddenException;
+import com.devsuperior.dslearn.services.exceptions.UnauthorizedException;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -76,4 +78,16 @@ public class ResourceExceptionHandler {
         return ResponseEntity.status(status).body(err);
     }
 
+
+    @ExceptionHandler(ForbiddenException.class)
+    public ResponseEntity<OAuthCustomError> forbidden(ForbiddenException e, HttpServletRequest request) {
+        OAuthCustomError error = new OAuthCustomError("Forbideen", e.getMessage());
+        return ResponseEntity.status(HttpStatus.FORBIDDEN).body(error);
+    }
+
+    @ExceptionHandler(UnauthorizedException.class)
+    public ResponseEntity<OAuthCustomError> unauthorized(UnauthorizedException e, HttpServletRequest request) {
+        OAuthCustomError error = new OAuthCustomError("Unauthorized", e.getMessage());
+        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(error);
+    }
 }
