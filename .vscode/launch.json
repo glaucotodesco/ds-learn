@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DslearnbdsApplication<dslearn>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.devsuperior.dslearn.DslearnbdsApplication",
+            "projectName": "dslearn",
+            "args": ""
+        }
+    ]
+}
